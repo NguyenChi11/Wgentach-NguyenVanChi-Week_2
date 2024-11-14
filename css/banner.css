@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.banner {
+  background-image: url(../images/banner.png);
+  height: 1080px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.banner .banner__content {
+  font-family: "Lora";
+}
+
+.banner .banner__content h1 {
+  font-size: 72px;
+  color: #ffffff;
+  line-height: 90px;
+  font-weight: 400;
+  width: 350px;
+  align-items: center;
+}
+
+.banner .banner__content h4 {
+  font-family: "Poppins";
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 30px;
+}
+
+.banner .banner__content p {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 10px;
+}
+
+@media (max-width: 391px) {
+  .banner {
+    height: 600px;
+  }
+
+  .banner .banner__content h1 {
+    font-size: 56px;
+    line-height: 76px;
+  }
+}
