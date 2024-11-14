@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.product__title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px -88px;
+}
+
+.none {
+  display: none;
+}
+
+.product__menu-left h1 {
+  font-size: 36px;
+  font-family: "Lora";
+  font-weight: 400;
+  line-height: 48px;
+}
+
+.product__menu-right {
+  display: flex;
+  gap: 30px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  align-items: center;
+}
+
+.product__menu--title {
+  cursor: pointer;
+  font-weight: bold;
+  color: black;
+}
+
+.product__menu--title.under--action {
+  border-bottom: 2px solid black;
+}
+
+.product__gird--list {
+  display: flex;
+  justify-content: center;
+}
+
+.product__gird {
+  max-width: 1410px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.productions:first-child {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.productions__gird__first {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.productions__gird__last {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.productions {
+  position: relative;
+}
+
+.product__price__all {
+  display: flex;
+  gap: 10px;
+}
+
+.product__price__new {
+  color: red;
+}
+
+.product__price__old {
+  text-decoration: line-through;
+}
+
+.voucher {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  font-size: small;
+}
+
+.voucher__sell {
+  background: black;
+  padding: 8px;
+}
+.voucher__new {
+  background: green;
+  padding: 4px;
+}
+.product__voucher {
+  background: red;
+  padding: 8px;
+}
+
+.product__image {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+}
+
+.category {
+  font-size: 14px;
+  line-height: 22px;
+  margin: 10px 0;
+}
+.product__name,
+.product__price {
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: left;
+}
+
+.product__name {
+  font-weight: 500;
+}
+
+@media (max-width: 391px) {
+  .product__title {
+    display: grid;
+  }
+
+  .product__menu-left h1 {
+    text-align: center;
+    align-items: center;
+    margin: 20px;
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .product__menu-right {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 20px;
+  }
+
+  .product__menu--title:last-child {
+    display: none;
+  }
+
+  .product__gird {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .productions:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .productions__gird__first {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .productions__gird__last {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .product__image {
+    max-width: 100%;
+    height: 235px;
+  }
+}
