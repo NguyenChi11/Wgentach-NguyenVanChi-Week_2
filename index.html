@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/banner.css" />
+    <link rel="stylesheet" href="./css/product.css">
   </head>
   <body>
     <header>
@@ -45,6 +46,29 @@
           </p>
         </div>
        </div>
+
+       <!-- phần product -->
+      <div class="product__title">
+        <div class="product__menu-left"><h1>         
+          Our picks for you
+        </h1>
+      </div>
+        <div class="product__menu-right">
+          <span class="product__menu--title" data-category="seating"  onclick="selectItem(this)"  >SEATING</span>
+          <span class="product__menu--title" data-category="table" onclick="selectItem(this)">TABLE </span>
+          <span class="product__menu--title" data-category="storage" onclick="selectItem(this)" >STORAGE </span>
+          <span class="product__menu--title" data-category="lighting" onclick="selectItem(this)" >LIGHTING </span>
+          <span class="product__menu--title" data-category="decor" onclick="selectItem(this)"  >DECOR </span>
+        </div>
+      </div>
+      <!-- product gird  -->
+       <!-- CSS lại -->
+       <div class="product__gird--list">
+         <div id="product__container" class="product__gird">
+         </div>
+       </div>
   </body>
+  <script type="module" src="./js/app.js"></script>
   <script type="module" src="./js/header.js"></script>
+  <script type="module" src="./js/data.js"></script>
 </html>
