@@ -1,0 +1,41 @@
+/* Container giới hạn không gian cho chữ chạy */
+.marquee-container {
+  width: 100%; /* hoặc chỉnh độ rộng mong muốn */
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #ffffff;
+  padding: 10px 0;
+  box-sizing: border-box;
+  margin: 80px 0;
+}
+
+/* Thiết lập chữ và hiệu ứng */
+.marquee-text {
+  display: inline-block;
+  padding-left: 100%; /* Bắt đầu từ ngoài khung bên phải */
+  animation: marquee 10s linear infinite;
+  color: #cccccc;
+  font-family: Lora;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 90px;
+  text-align: left;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 391px) {
+  .marquee-container {
+    margin: 60px 0;
+  }
+  .marquee-text {
+    font-size: 60px;
+  }
+}
