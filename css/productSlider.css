@@ -1,0 +1,49 @@
+.slider__title {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+.slider__title {
+  font-family: "Lora";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.product__slider {
+  width: 100%;
+}
+
+.slider__image {
+  width: 100%;
+}
+
+.slider__list {
+  display: flex;
+  justify-content: center;
+  width: 1420px;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+}
+
+.visibility {
+  visibility: unset;
+}
+
+@media (max-width: 391px) {
+  .slider__title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 38.4px;
+  }
+  .slider__image {
+    max-height: 350px;
+  }
+}
