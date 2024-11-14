@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+}
+.header__information {
+  display: flex;
+  width: 100%;
+  background: #000000;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.header__information a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header__phone,
+.header__address {
+  margin: 10px;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 32px;
+  font-family: "Lora";
+  font-weight: 500;
+  margin: 10px;
+}
+
+.icon__arrow {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+.hide {
+  display: none;
+}
+
+@media (max-width: 391px) {
+  .icon__arrow {
+    display: block;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+  }
+  .turn__off {
+    display: none;
+  }
+  .turn__on {
+    display: block;
+  }
+  .header__information a {
+    font-size: 14px;
+  }
+}
