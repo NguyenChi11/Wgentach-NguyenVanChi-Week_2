@@ -1,0 +1,93 @@
+.inspiration {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inspiration__title {
+  display: flex;
+  justify-content: center;
+  margin: 80px;
+}
+
+.inspiration__title h2 {
+  font-family: "Lora";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: center;
+  width: 550px;
+}
+
+.inspiration__full {
+  display: flex;
+  align-items: center;
+}
+
+.inspiration__body {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  align-items: center;
+}
+
+.inspiration__image {
+  width: 291px;
+}
+
+.inspiration__item {
+  width: 291px;
+}
+.inspiration__item h3 {
+  font-family: Lora;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 38px;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.inspiration__item p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+@media (max-width: 391px) {
+  .inspiration__full {
+    width: 390px;
+    overflow: scroll; /* Hiện thanh cuộn cả ngang và dọc */
+  }
+
+  .inspiration__title {
+    width: 312px;
+    height: 116px;
+    gap: 0px;
+    opacity: 0px;
+  }
+
+  .inspiration__title h2 {
+    font-family: Lora;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 38.4px;
+  }
+  .inspiration__image {
+    max-width: 265px;
+  }
+
+  .inspiration__item {
+    max-width: 265px;
+  }
+
+  .inspiration__item h3 {
+    font-size: 20px;
+  }
+
+  .inspiration__item p {
+    font-size: 14px;
+  }
+}
