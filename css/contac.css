@@ -19,31 +19,31 @@
   width: 310px;
   height: 310px;
   position: absolute;
-  top: 40px;
-  left: 280px;
+  top: 5%;
+  left: 45%;
 }
 
 .image__contact_2 {
   width: 180px;
   height: 180px;
   position: absolute;
-  top: 280px;
-  left: 220px;
+  top: 37%;
+  left: 35%;
 }
 
 .image__contact_3 {
   width: 220px;
   height: 220px;
   position: absolute;
-  top: 400px;
-  left: 440px;
+  top: 55%;
+  left: 70%;
 }
 
 .image__contact_4 {
   width: 330px;
   height: 330px;
-  top: 40px;
-  left: 80px;
+  top: 10%;
+  left: 20%;
   position: absolute;
 }
 
@@ -51,7 +51,7 @@
   width: 250px;
   height: 250px;
   position: absolute;
-  top: 380px;
+  top: 55%;
 }
 
 .contact__between {
@@ -99,6 +99,108 @@
   padding: 9px 41px;
   border: 1px solid #d1ceca;
   background: #f6f2ee;
+}
+@media (min-width: 1441px) and (max-width: 1919px) {
+  .image__contact_1 {
+    width: 280px;
+    height: 280px;
+  }
+  .image__contact_2 {
+    width: 160px;
+    height: 160px;
+  }
+
+  .image__contact_3 {
+    width: 200px;
+    height: 200px;
+  }
+  .image__contact_4 {
+    width: 300px;
+    height: 300px;
+  }
+  .image__contact_5 {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1440px) {
+  .image__contact_1 {
+    width: 240px;
+    height: 240px;
+    top: 5%;
+    left: 40%;
+  }
+  .image__contact_2 {
+    width: 120px;
+    height: 120px;
+    top: 32%;
+    left: 30%;
+  }
+
+  .image__contact_3 {
+    width: 180px;
+    height: 180px;
+    top: 55%;
+    left: 50%;
+  }
+  .image__contact_4 {
+    width: 240px;
+    height: 240px;
+    top: 10%;
+    left: 5%;
+  }
+  .image__contact_5 {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (min-width: 392px) and (max-width: 768px) {
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .image__contact_1 {
+    width: 180px;
+    height: 180px;
+    top: 10%;
+    left: 30%;
+  }
+
+  .image__contact_2 {
+    width: 160px;
+    height: 160px;
+    top: 60%;
+    left: 15%;
+  }
+
+  .image__contact_3 {
+    width: 140px;
+    height: 140px;
+    top: 65%;
+    left: 70%;
+  }
+  .image__contact_4 {
+    width: 160px;
+    height: 160px;
+    top: -20%;
+    left: 20%;
+  }
+  .image__contact_5 {
+    width: 140px;
+    height: 140px;
+    top: -30%;
+    left: 60%;
+  }
+  .contact__btn button {
+    padding: 6px 30px;
+    border: 1px solid #d1ceca;
+    background: #f6f2ee;
+  }
+  .contact__between p {
+    margin: 20px 0;
+    width: 100%;
+  }
 }
 
 @media (max-width: 391px) {

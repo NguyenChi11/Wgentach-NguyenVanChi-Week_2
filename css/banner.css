@@ -43,6 +43,33 @@
   color: #ffffff;
   margin: 10px;
 }
+@media (min-width: 1441px) and (max-width: 1919px) {
+  .banner {
+    height: 900px;
+  }
+  .banner .banner__content h1 {
+    font-size: 62px;
+    line-height: 84px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1440px) {
+  .banner {
+    height: 800px;
+  }
+  .banner .banner__content h1 {
+    font-size: 60px;
+    line-height: 84px;
+  }
+}
+@media (min-width: 392px) and (max-width: 768px) {
+  .banner {
+    height: 700px;
+  }
+  .banner .banner__content h1 {
+    font-size: 56px;
+    line-height: 80px;
+  }
+}
 
 @media (max-width: 391px) {
   .banner {
@@ -50,7 +77,7 @@
   }
 
   .banner .banner__content h1 {
-    font-size: 56px;
+    font-size: 50px;
     line-height: 76px;
   }
 }

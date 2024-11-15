@@ -14,7 +14,7 @@
 .inspiration__title h2 {
   font-family: "Lora";
   font-size: 36px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 48px;
   text-align: center;
   width: 550px;
@@ -56,10 +56,94 @@
   text-align: left;
 }
 
+@media (min-width: 1441px) and (max-width: 1919px) {
+  .inspiration__title {
+    margin: 70px;
+  }
+
+  .inspiration__title h2 {
+    font-size: 34px;
+    width: 500px;
+  }
+  .inspiration__body {
+    gap: 40px;
+  }
+
+  .inspiration__image {
+    width: 280px;
+  }
+
+  .inspiration__item {
+    width: 280px;
+  }
+  .inspiration__item h3 {
+    font-size: 24px;
+  }
+
+  .inspiration__item p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1440px) {
+  .inspiration__title {
+    margin: 60px;
+  }
+  .inspiration__title h2 {
+    font-size: 32px;
+    width: 480px;
+  }
+  .inspiration__body {
+    gap: 20px;
+  }
+  .inspiration__image {
+    width: 275px;
+  }
+
+  .inspiration__item {
+    width: 275px;
+  }
+  .inspiration__item h3 {
+    font-size: 22px;
+  }
+
+  .inspiration__item p {
+    font-size: 14px;
+  }
+}
+@media (min-width: 392px) and (max-width: 768px) {
+  .inspiration__full {
+    width: 100%;
+    overflow: scroll;
+  }
+  .inspiration__title {
+    margin: 50px;
+  }
+  .inspiration__title h2 {
+    font-size: 30px;
+    width: 460px;
+  }
+  .inspiration__body {
+    gap: 20px;
+  }
+  .inspiration__image {
+    width: 270px;
+  }
+
+  .inspiration__item {
+    width: 270px;
+  }
+  .inspiration__item h3 {
+    font-size: 20px;
+  }
+
+  .inspiration__item p {
+    font-size: 14px;
+  }
+}
 @media (max-width: 391px) {
   .inspiration__full {
-    width: 390px;
-    overflow: scroll; /* Hiện thanh cuộn cả ngang và dọc */
+    width: 100%;
+    overflow: scroll;
   }
 
   .inspiration__title {
@@ -72,8 +156,10 @@
   .inspiration__title h2 {
     font-family: Lora;
     font-size: 28px;
-    font-weight: 400;
     line-height: 38.4px;
+  }
+  .inspiration__body {
+    gap: 20px;
   }
   .inspiration__image {
     max-width: 265px;

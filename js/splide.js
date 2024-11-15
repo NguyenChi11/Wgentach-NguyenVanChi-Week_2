@@ -51,9 +51,16 @@ function checkScreenSize() {
     rewind: true,
     gap: 10,
   });
+  const splide_2 = new Splide(".splide", {
+    perPage: 3,
+    rewind: true,
+    gap: 10,
+  });
 
   if (width <= 768) {
     splide_1.mount();
+  } else if (width <= 1500 && width >= 769) {
+    splide_2.mount();
   } else {
     splide.mount();
   }

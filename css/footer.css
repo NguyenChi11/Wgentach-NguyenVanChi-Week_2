@@ -46,6 +46,13 @@ footer .icon i {
   right: 20px;
 }
 
+@media (min-width: 392px) and (max-width: 768px) {
+  .footer__input input {
+    padding: 14px 17px;
+    width: 100%;
+  }
+}
+
 @media (max-width: 391px) {
   .footer h2 {
     font-size: 24px;
