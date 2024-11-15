@@ -36,6 +36,8 @@
 }
 
 .banner .banner__content p {
+  display: inline;
+  border-bottom: 2px solid rgb(255, 255, 255);
   font-family: "Poppins";
   font-size: 16px;
   line-height: 24px;
