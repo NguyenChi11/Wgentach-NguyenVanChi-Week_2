@@ -21,10 +21,13 @@
 .product__menu-right {
   display: flex;
   gap: 30px;
-  font-family: "Poppins";
-  font-weight: 500;
+  font-family: Poppins;
   font-size: 16px;
-  align-items: center;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
 
 .product__menu--title {
@@ -33,8 +36,8 @@
   color: black;
 }
 
-.product__menu--title.under--action {
-  border-bottom: 2px solid black;
+.category__title.selected {
+  border-bottom: 2px solid #000;
 }
 
 .product__gird--list {
@@ -89,15 +92,34 @@
 
 .voucher__sell {
   background: black;
-  padding: 8px;
+  padding: 4px;
+  margin-bottom: 4px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: left;
 }
 .voucher__new {
-  background: green;
-  padding: 8px;
+  background: #054e4a;
+  display: inline;
+  padding: 4px;
+  margin-top: 4px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: left;
 }
 .product__voucher {
-  background: red;
-  padding: 8px;
+  background: #a42003;
+  display: inline;
+  padding: 6px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: left;
 }
 
 .product__image {
@@ -107,16 +129,36 @@
 }
 
 .category {
-  font-size: 14px;
-  line-height: 22px;
-  margin: 10px 0;
-}
-.product__name,
-.product__price {
   font-family: Poppins;
   font-size: 14px;
+  font-weight: 400;
   line-height: 22px;
   text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-top: 10px;
+}
+.product__name {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25.88px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 5px 0;
+}
+
+.product__price,
+.product__price__new,
+.product__price__old {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.5px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
 
 .product__name {
@@ -134,11 +176,6 @@
     gap: 24px;
     font-weight: 500;
     font-size: 16px;
-  }
-  .voucher__new,
-  .voucher__sell,
-  .product__voucher {
-    padding: 6px;
   }
   .product__gird {
     max-width: 1200px;
@@ -166,11 +203,6 @@
     font-weight: 500;
     font-size: 16px;
   }
-  .voucher__new,
-  .voucher__sell,
-  .product__voucher {
-    padding: 4px;
-  }
   .product__gird {
     max-width: 1000px;
   }
@@ -179,6 +211,7 @@
     height: 320px;
     object-fit: cover;
   }
+
   .product__menu--title {
     font-size: 14px;
   }
@@ -193,11 +226,6 @@
     margin: 20px;
     font-size: 30px;
     line-height: 42px;
-  }
-  .voucher__new,
-  .voucher__sell,
-  .product__voucher {
-    padding: 4px;
   }
   .product__menu-right {
     font-size: 18px;
@@ -288,7 +316,6 @@
   .voucher__new,
   .voucher__sell,
   .product__voucher {
-    padding: 4px;
     font-size: 10px;
   }
 

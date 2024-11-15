@@ -12,11 +12,13 @@
 }
 
 .inspiration__title h2 {
-  font-family: "Lora";
+  font-family: Lora;
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 48px;
   text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
   width: 550px;
 }
 
