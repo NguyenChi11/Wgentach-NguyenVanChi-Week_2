@@ -47,8 +47,42 @@ body {
 .hide {
   display: none;
 }
+@media (min-width: 1441px) and (max-width: 1919px) {
+  .header__logo {
+    font-size: 32px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1440px) {
+  .header__logo {
+    font-size: 30px;
+  }
+}
+@media (min-width: 392px) and (max-width: 768px) {
+  .header__logo {
+    font-size: 28px;
+  }
+  .icon__arrow {
+    display: block;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+  }
+  .turn__off {
+    display: none;
+  }
+  .turn__on {
+    display: block;
+  }
+  .header__information a {
+    font-size: 16px;
+  }
+}
 
 @media (max-width: 391px) {
+  .header__logo {
+    font-size: 26px;
+  }
   .icon__arrow {
     display: block;
     color: #ffffff;

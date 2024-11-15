@@ -63,6 +63,41 @@
   line-height: 24px;
   text-align: left;
 }
+@media (min-width: 392px) and (max-width: 768px) {
+  .single__text h2 {
+    font-size: 70px;
+    line-height: 64px;
+    margin: 80px;
+    width: 263px;
+  }
+
+  .single__text p {
+    font-size: 18px;
+  }
+
+  .icon__list {
+    display: flex;
+    flex-direction: column;
+  }
+  .icon__item {
+    display: flex;
+  }
+
+  .icon__item img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .icon__title h4 {
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
+
+  .icon__title p {
+    margin-left: 20px;
+    font-size: 14px;
+  }
+}
 
 @media (max-width: 391px) {
   .single__text h2 {
