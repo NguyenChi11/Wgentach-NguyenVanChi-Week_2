@@ -1,7 +1,7 @@
 const products = [
   {
     id: 1,
-    image: "../images/product_1.jpg",
+    image: "./images/product_1.jpg",
     category: "SOFA",
     product__name: "Oda ottoman",
     product__price: " $699.00",
@@ -9,7 +9,7 @@ const products = [
   },
   {
     id: 2,
-    image: "../images/product_2.jpg",
+    image: "./images/product_2.jpg",
     category: "DINING CHAR",
     product__name: "Oda ottoman",
     product__price: " $699.00",
@@ -19,7 +19,7 @@ const products = [
   },
   {
     id: 3,
-    image: "../images/product_3.jpg",
+    image: "./images/product_3.jpg",
     category: "DINING CHAR",
     product__name: "Oda ottoman",
     product__price__old: "699.00",
@@ -28,7 +28,7 @@ const products = [
   },
   {
     id: 4,
-    image: "../images/product_4.jpg",
+    image: "./images/product_4.jpg",
     category: "SOFA",
     product__name: "Oda ottoman",
     product__price: " $699.00",
@@ -36,7 +36,7 @@ const products = [
   },
   {
     id: 5,
-    image: "../images/product_5.jpg",
+    image: "./images/product_5.jpg",
     category: "SOFA",
     product__name: "Oda ottoman",
     product__price: " $699.00",
@@ -44,7 +44,7 @@ const products = [
   },
   {
     id: 6,
-    image: "../images/product_6.jpg",
+    image: "./images/product_6.jpg",
     category: "SOFA",
     product__name: "Oda ottoman",
     product__price: " $699.00",
@@ -53,7 +53,7 @@ const products = [
   },
   {
     id: 7,
-    image: "../images/product_6.jpg",
+    image: "./images/product_6.jpg",
     category: "SOFA",
     product__name: "Oda ottoman",
     product__price: " $699.00",
@@ -62,7 +62,7 @@ const products = [
   },
   {
     id: 8,
-    image: "../images/product_6.jpg",
+    image: "./images/product_6.jpg",
     category: "SOFA",
     product__name: "Oda ottoman",
     product__price: " $699.00",
