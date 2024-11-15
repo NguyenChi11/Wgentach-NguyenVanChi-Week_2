@@ -79,23 +79,26 @@ function checkScreenSize() {
     perPage: 4,
     rewind: true,
     gap: 10,
+    pagination: false,
   });
 
-  const splide_1 = new Splide(".splide", {
+  const splide_mobile = new Splide(".splide", {
     perPage: 2,
     rewind: true,
     gap: 10,
+    pagination: false,
   });
-  const splide_2 = new Splide(".splide", {
+  const splide_ipad = new Splide(".splide", {
     perPage: 3,
     rewind: true,
     gap: 10,
+    pagination: false,
   });
 
   if (width <= 768) {
-    splide_1.mount();
+    splide_mobile.mount();
   } else if (width <= 1500 && width >= 769) {
-    splide_2.mount();
+    splide_ipad.mount();
   } else {
     splide.mount();
   }

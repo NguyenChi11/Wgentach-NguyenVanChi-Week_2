@@ -316,7 +316,9 @@
   .voucher__new,
   .voucher__sell,
   .product__voucher {
+    margin: -2px;
     font-size: 10px;
+    padding: 2px;
   }
 
   .product__price,

@@ -48,6 +48,10 @@
     line-height: 38.4px;
     text-align: center;
   }
+  .slider__list {
+    width: 100%;
+    overflow: scroll;
+  }
 }
 
 @media (max-width: 391px) {
@@ -60,5 +64,9 @@
   .image__slide {
     width: 345px;
     height: 460px;
+  }
+  .slider__list {
+    width: 100%;
+    overflow: scroll;
   }
 }
