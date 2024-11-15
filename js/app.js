@@ -1,4 +1,5 @@
 import products from "./data.js";
+import products__all__list from "./product__all_list.js";
 // product
 const categories = document.querySelectorAll(".category__title");
 
@@ -9,7 +10,11 @@ categories.forEach((category) => {
   });
 });
 
-// hàm sản phẩm 6 ảnh
+//trang menu
+
+const productHome = products__all__list.find(
+  (i) => i.data_category === ""
+).item;
 
 function createProductCard(product) {
   return `
@@ -58,7 +63,7 @@ function createProductCard(product) {
 }
 
 const productList = document.getElementById("product__container");
-productList.innerHTML = products.map(createProductCard).join("");
+productList.innerHTML = productHome.map(createProductCard).join("");
 
 const productions = document.querySelectorAll(".productions");
 productions.forEach((item, index) => {
@@ -69,15 +74,21 @@ productions.forEach((item, index) => {
   }
 });
 
+// cuối trang menu
+
+// lọc sản ph
+
 const listCategories = document.querySelectorAll(".product__menu--title");
 const productContainer = document.getElementById("product__container");
 
 listCategories.forEach((item) => {
   item.addEventListener("click", function () {
     const category = this.getAttribute("data-category");
-    const filteredProducts = products.filter(
-      (product) => product.data_category === category
-    );
+    const filteredProducts = products__all__list
+      .filter((product) => product.data_category === category)
+      .flatMap((product) => product.item);
+
+    console.log(filteredProducts);
 
     productContainer.innerHTML = filteredProducts
       .map(
@@ -126,5 +137,14 @@ listCategories.forEach((item) => {
     `
       )
       .join("");
+
+    const productions = document.querySelectorAll(".productions");
+    productions.forEach((item, index) => {
+      if (index % 6 === 0) {
+        item.classList.add("productions__gird__first");
+      } else if (index % 6 === 5) {
+        item.classList.add("productions__gird__last");
+      }
+    });
   });
 });

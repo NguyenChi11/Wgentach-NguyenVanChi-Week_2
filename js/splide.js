@@ -1,4 +1,5 @@
 import products from "./data.js";
+import products__all__list from "./product__all_list.js";
 //phần splide
 function createSplideProduct(product) {
   return `
