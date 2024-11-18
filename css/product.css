@@ -2,13 +2,18 @@
 
 .product__title {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin: 20px -100px;
+  margin: 0 250px;
 }
 
 .none {
   display: none;
+}
+
+.product__menu-left {
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
 
 .product__menu-left h1 {
@@ -16,18 +21,20 @@
   font-family: "Lora";
   font-weight: 400;
   line-height: 48px;
+  margin-left: 4px;
 }
 
 .product__menu-right {
   display: flex;
-  gap: 30px;
+  gap: 40px;
   font-family: Poppins;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  margin-right: 3px;
 }
 
 .product__menu--title {
@@ -46,7 +53,7 @@
 }
 
 .product__gird {
-  max-width: 1410px;
+  margin: 0 250px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
@@ -67,6 +74,7 @@
 
 .productions {
   position: relative;
+  margin-bottom: 12px;
 }
 
 .product__price__all {
@@ -84,15 +92,15 @@
 
 .voucher {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 12px;
+  left: 12px;
   color: white;
   font-size: small;
 }
 
 .voucher__sell {
   background: black;
-  padding: 4px;
+  padding: 3px 12px;
   margin-bottom: 4px;
   font-family: Poppins;
   font-size: 14px;
@@ -103,7 +111,7 @@
 .voucher__new {
   background: #054e4a;
   display: inline;
-  padding: 4px;
+  padding: 4px 10px;
   margin-top: 4px;
   font-family: Poppins;
   font-size: 14px;
@@ -112,9 +120,11 @@
   text-align: left;
 }
 .product__voucher {
+  position: absolute;
+  top: 8px;
   background: #a42003;
   display: inline;
-  padding: 6px;
+  padding: 10px;
   font-family: Poppins;
   font-size: 14px;
   font-weight: 700;
@@ -124,7 +134,7 @@
 
 .product__image {
   width: 100%;
-  height: 460px;
+  height: 81%;
   object-fit: cover;
 }
 
@@ -166,7 +176,7 @@
 }
 @media (min-width: 1441px) and (max-width: 1919px) {
   .product__title {
-    margin: 20px -140px;
+    margin: 0 150px;
   }
   .product__menu-left h1 {
     font-size: 32px;
@@ -178,22 +188,23 @@
     font-size: 16px;
   }
   .product__gird {
-    max-width: 1200px;
-  }
-  .product__image {
-    width: 100%;
-    height: 380px;
-    object-fit: cover;
+    margin: 0 150px;
   }
   .product__menu--title {
     font-size: 14px;
+  }
+  .product__image {
+    width: 100%;
+    height: 81%;
+    object-fit: cover;
   }
 }
 
 @media (min-width: 769px) and (max-width: 1440px) {
   .product__title {
-    margin: 20px -40px;
+    margin: 0 50px;
   }
+
   .product__menu-left h1 {
     font-size: 30px;
     line-height: 44px;
@@ -204,12 +215,7 @@
     font-size: 16px;
   }
   .product__gird {
-    max-width: 1000px;
-  }
-  .product__image {
-    width: 100%;
-    height: 320px;
-    object-fit: cover;
+    margin: 0 50px;
   }
 
   .product__menu--title {
@@ -217,13 +223,26 @@
   }
 }
 @media (min-width: 392px) and (max-width: 768px) {
+  .product__title__all {
+    display: flex;
+    justify-content: center;
+  }
   .product__title {
     display: grid;
+    margin: 0;
+  }
+  .product__menu-left {
+    margin: 0;
+  }
+  .product__gird {
+    margin: 10px;
+  }
+  .product__image {
+    width: 100%;
   }
   .product__menu-left h1 {
     text-align: center;
     align-items: center;
-    margin: 20px;
     font-size: 30px;
     line-height: 42px;
   }
@@ -253,10 +272,7 @@
     grid-column-start: 1;
     grid-column-end: 3;
   }
-  .product__image {
-    max-width: 100%;
-    height: 320px;
-  }
+
   .product__price,
   .product__price__new,
   .product__price__old {
@@ -268,8 +284,28 @@
 }
 
 @media (max-width: 391px) {
+  .productions {
+    margin-bottom: 22px;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .product__title__all {
+    display: flex;
+    justify-content: center;
+  }
   .product__title {
     display: grid;
+  }
+  .product__menu-left {
+    margin: 0;
+  }
+
+  .product__title {
+    display: grid;
+    margin: 0;
+  }
+  .product__gird {
+    margin: 2px;
   }
 
   .product__menu-left h1 {
@@ -309,10 +345,7 @@
     grid-column-start: 1;
     grid-column-end: 3;
   }
-  .product__image {
-    max-width: 100%;
-    height: 235px;
-  }
+
   .voucher__new,
   .voucher__sell,
   .product__voucher {
