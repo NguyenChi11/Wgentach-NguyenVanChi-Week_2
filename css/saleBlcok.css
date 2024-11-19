@@ -118,9 +118,24 @@
     height: 480px;
     width: 360px;
   }
-
   .wrapper__image img {
-    width: 360px;
+    width: 365px;
     height: 480px;
+  }
+
+  .title__header p {
+    font-size: 16px;
+    margin: 32px 0px 032px 9px;
+  }
+
+  .title__body h1 {
+    font-family: Lora;
+    font-size: 46px;
+    width: 200px;
+    line-height: 64px;
+  }
+  .title__body {
+    margin-top: 30px;
+    margin-left: 6px;
   }
 }

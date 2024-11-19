@@ -3,8 +3,8 @@ import products__all__list from "./product__all_list.js";
 //phần splide
 function createSplideProduct(product) {
   return `
-      <li class="splide__slide">  
-        <div class="product__slider">
+  <li class="splide__slide">  
+    <div class="product__slider">
         <img class="product__image image__slide" src="${product.image}" alt="">
         <div class="category">${product.category}</div>
         <div class="product__name">${product.product__name}</div>
@@ -44,8 +44,8 @@ function createSplideProduct(product) {
             : ""
         }
       </div>
-        </div>
-      </li>
+    </div>
+</li>
     `;
 }
 const splideProduct = document.getElementById("splide__list");
@@ -96,10 +96,19 @@ function checkScreenSize() {
     pagination: false,
   });
 
-  if (width <= 768) {
+  const splide_2 = new Splide(".splide", {
+    perPage: 2,
+    rewind: true,
+    gap: 10,
+    pagination: false,
+  });
+
+  if (width <= 391) {
     splide_mobile.mount();
   } else if (width <= 1500 && width >= 769) {
     splide_ipad.mount();
+  } else if (width <= 768 && width >= 392) {
+    splide_2.mount();
   } else {
     splide.mount();
   }

@@ -154,6 +154,7 @@
     height: 116px;
     gap: 0px;
     opacity: 0px;
+    margin: 32px;
   }
 
   .inspiration__title h2 {
@@ -162,7 +163,8 @@
     line-height: 38.4px;
   }
   .inspiration__body {
-    gap: 20px;
+    margin: 40px 16px;
+    gap: 21px;
   }
   .inspiration__image {
     max-width: 265px;
@@ -174,9 +176,11 @@
 
   .inspiration__item h3 {
     font-size: 20px;
+    margin-top: 10px;
   }
 
   .inspiration__item p {
     font-size: 14px;
+    margin-top: -10px;
   }
 }

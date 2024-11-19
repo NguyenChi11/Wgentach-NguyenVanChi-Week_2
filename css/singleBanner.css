@@ -99,12 +99,18 @@
 }
 
 @media (max-width: 391px) {
+  .single__banner {
+    margin: 18px 0 0px;
+    padding: 0px 0 46px;
+  }
   .single__text h2 {
-    font-size: 60px;
+    margin: 152px 13px 10px;
+    width: 230px;
+    font-family: Lora;
+    font-size: 48px;
     font-weight: 400;
     line-height: 64px;
-    margin: 80px;
-    width: 263px;
+    text-align: center;
   }
 
   .single__text p {
@@ -114,9 +120,13 @@
   .icon__list {
     display: flex;
     flex-direction: column;
+    gap: 0;
+    margin: 46px 14px 26px 14px;
   }
   .icon__item {
     display: flex;
+    margin: 0;
+    margin-bottom: 21px;
   }
 
   .icon__item img {
@@ -125,12 +135,12 @@
   }
 
   .icon__title h4 {
-    margin: 0 20px;
-    margin-bottom: 20px;
+    margin: 0px 16px;
   }
 
   .icon__title p {
-    margin-left: 20px;
+    margin: 0 14px;
     font-size: 14px;
+    width: 260px;
   }
 }
