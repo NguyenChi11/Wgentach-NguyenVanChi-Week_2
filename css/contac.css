@@ -232,40 +232,40 @@
   }
 
   .contact__right {
-    padding-top: 40%;
+    padding-top: 60%;
   }
 
   .image__contact_1 {
     width: 110px;
     height: 110px;
-    top: 20px;
-    left: 110px;
+    top: 31px;
+    left: 113px;
   }
 
   .image__contact_2 {
     width: 110px;
     height: 110px;
-    top: 100px;
-    left: 10px;
+    top: 96px;
+    left: 14px;
   }
 
   .image__contact_3 {
     width: 110px;
     height: 110px;
-    top: 100px;
-    left: 270px;
+    top: 104px;
+    left: 265px;
   }
   .image__contact_4 {
     width: 110px;
     height: 110px;
-    top: 10px;
-    left: 40px;
+    top: 39px;
+    left: 38px;
   }
   .image__contact_5 {
     width: 110px;
     height: 110px;
-    top: 10px;
-    left: 260px;
+    top: 28px;
+    left: 236px;
   }
   .contact__btn button {
     padding: 6px 30px;
@@ -275,5 +275,22 @@
   .contact__between p {
     margin: 20px 0;
     width: 100%;
+  }
+  .contact__between span {
+    font-size: 16px;
+    line-height: 30px;
+    width: 205px;
+  }
+
+  .contact__between h3 {
+    margin: 10px 0;
+    width: 290px;
+  }
+
+  .contact__btn button {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    padding: 4px 41px 5px;
   }
 }

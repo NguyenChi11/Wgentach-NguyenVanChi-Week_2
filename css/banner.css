@@ -86,8 +86,24 @@
     height: 600px;
   }
 
+  .banner .banner__content {
+    margin-bottom: 28px;
+  }
+
   .banner .banner__content h1 {
-    font-size: 50px;
-    line-height: 76px;
+    font-family: Lora;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 76.8px;
+    text-align: center;
+    margin-bottom: -8px;
+  }
+  .banner .banner__content h4 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 22px;
+    margin-left: 22px;
+    font-family: Poppins;
   }
 }
