@@ -1,4 +1,3 @@
-import products from "./data.js";
 import products__all__list from "./product__all_list.js";
 // product
 const categories = document.querySelectorAll(".category__title");

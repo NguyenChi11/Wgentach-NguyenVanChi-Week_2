@@ -239,7 +239,7 @@ const products__all__list = [
     item: [
       {
         id: 1,
-        image: "./images/product_2.jpg",
+        image: "./images/product_1.jpg",
         category: "SOFA",
         product__name: "Oda ottoman",
         product__price: " $699.00",

@@ -4,7 +4,7 @@
   align-items: center;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
     url(../images/background_2.png) no-repeat center/cover;
-  margin: 60px 0;
+  margin: 98px 0 60px;
   color: #ffffff;
 }
 
@@ -21,7 +21,7 @@
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  margin: 40px;
+  margin: 40px 0 28px;
 }
 
 .single__text p {
@@ -30,8 +30,7 @@
   font-weight: 400;
   line-height: 24px;
   text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  margin-bottom: 18px;
 }
 .icon__list {
   display: flex;
@@ -53,7 +52,7 @@
   font-weight: 400;
   line-height: 32px;
   text-align: left;
-  margin: 20px 0;
+  margin: 20px 0 8px;
 }
 
 .icon__title p {

@@ -2,7 +2,6 @@
   background: #f6f2ee;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  height: 752px;
 }
 
 .contact__left {
@@ -19,31 +18,31 @@
   width: 310px;
   height: 310px;
   position: absolute;
-  top: 5%;
-  left: 45%;
+  top: 14%;
+  left: 44%;
 }
 
 .image__contact_2 {
   width: 180px;
   height: 180px;
   position: absolute;
-  top: 37%;
-  left: 35%;
+  top: 43%;
+  left: 34%;
 }
 
 .image__contact_3 {
   width: 220px;
   height: 220px;
   position: absolute;
-  top: 55%;
-  left: 70%;
+  top: 64%;
+  left: 67%;
 }
 
 .image__contact_4 {
   width: 330px;
   height: 330px;
-  top: 10%;
-  left: 20%;
+  top: 16%;
+  left: 14%;
   position: absolute;
 }
 
@@ -51,22 +50,23 @@
   width: 250px;
   height: 250px;
   position: absolute;
-  top: 55%;
+  top: 58%;
+  left: -2%;
 }
 
 .contact__between {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 48% 0px 38%;
 }
 
-.contact__between p {
+.contact__between span {
   font-family: Poppins;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   text-align: center;
-  margin: 40px 0;
   width: 160px;
 }
 
@@ -93,6 +93,7 @@
 .contact__btn {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .contact__btn button {
@@ -155,9 +156,23 @@
   }
 }
 @media (min-width: 392px) and (max-width: 768px) {
+  .contact__between {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
   .contact {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .contact__left {
+    padding-bottom: 50%;
+  }
+
+  .contact__right {
+    padding-top: 30%;
   }
 
   .image__contact_1 {
@@ -170,26 +185,26 @@
   .image__contact_2 {
     width: 160px;
     height: 160px;
-    top: 60%;
+    top: 47%;
     left: 15%;
   }
 
   .image__contact_3 {
     width: 140px;
     height: 140px;
-    top: 65%;
+    top: 50%;
     left: 70%;
   }
   .image__contact_4 {
     width: 160px;
     height: 160px;
-    top: -20%;
+    top: 10%;
     left: 20%;
   }
   .image__contact_5 {
     width: 140px;
     height: 140px;
-    top: -30%;
+    top: 15%;
     left: 60%;
   }
   .contact__btn button {
@@ -207,6 +222,17 @@
   .contact {
     display: grid;
     grid-template-columns: 1fr;
+  }
+  .contact__between {
+    margin: 0;
+  }
+
+  .contact__left {
+    padding-bottom: 60%;
+  }
+
+  .contact__right {
+    padding-top: 40%;
   }
 
   .image__contact_1 {

@@ -1,7 +1,7 @@
 .wrapper__block {
   display: flex;
   justify-content: center;
-  gap: 70px;
+  gap: 76px;
   margin: 20px;
   font-family: "Poppins";
 }
